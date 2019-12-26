@@ -12,9 +12,9 @@
     <h1>String {{ name }}</h1>
     <h1>Summ: {{ 10 + 60 }}</h1>
     <h1>Number: {{ number }}</h1>
-    <p>
-
-    </p>
+    <h1>Method: {{ sayHello() }}</h1>
+    <h1>If statement: {{ isOk ? "Im ok" : "Im not ok!!" }}</h1>
+    <h1>Functions: {{ string.split('').reverse().join('')}}</h1>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
@@ -22,7 +22,14 @@
         el: '#app',
         data: {
             name: 'Vue!',
-            number: 100
+            number: 100,
+            isOk: true,
+            string: "My name is Alex"
+        },
+        methods: {
+            sayHello: function () {
+                return 'I am function'
+            }
         }
     });
 </script>
