@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+<div id="app">
+    <h2>{{title}}</h2>
+    <h3>{{newFild}}</h3>
+    <button @click="title = 'Updated title'">Updated title</button>
+</div>
+<hr>
+<div id="app2">
+    <h2>{{title}}</h2>
+    <button @click="updateFirstTitle">Updated first title</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+    let vue1 = new Vue({
+        el: '#app',
+        data: {
+            title: "Hello I'm Vue!"
+        },
+        methods: {
+            alertFast:function () {
+                alert('I am from 1');
+            }
+        }
+    });
+    vue1.newFild = "rendom text";
+    new Vue({
+        el: '#app2',
+        data: {
+            title: "Hello from Vue2!"
+        },
+        methods: {
+            updateFirstTitle:function () {
+                vue1.title = "updated from second app"
+                vue1.newFild = "newFild"
+                setTimeout(function () {
+                    vue1.alertFast();
+                }, 500)
+            }
+        }
+    });
+</script>
+</body>
+</html>
