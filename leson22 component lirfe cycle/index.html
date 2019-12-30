@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue</title>
+</head>
+<body>
+
+<div id="app">
+<h2>{{title}}</h2>
+    <button @click="title = 'Changed title'">Change</button>
+    <button @click="doDestroy">Do Destroy</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+
+  let vue = new Vue({
+      el: '#app',
+        data: {
+            title: "Hello I'm Vue2!"
+        },
+      methods: {
+          doDestroy:function () {
+            this.$destroy()
+          }
+      },
+      //до создания
+      beforeCreate: function () {
+          console.log('beforeCreate')
+      },
+      //созданно
+      created: function () {
+          console.log('created')
+      },
+      //скомпелированно но не вставленно в дом дерево
+      beforeMount:function () {
+          console.log('beforeMount')
+      },
+      //готово и вставленно в дом
+      mounted:function () {
+          console.log('mounted')
+      },
+      //вставленно но изменений не происходило
+      beforeUpdate:function () {
+          console.log('beforeUpdate')
+      },
+      //произошли изменения
+      updated: function () {
+          console.log('updated')
+      },
+      //удаление или уничтожение компонента
+      //
+      beforeDestroy: function () {
+          console.log('beforeDestroy')
+      },
+      destroyed:function () {
+          console.log('destroyed')
+      }
+
+    });
+
+</script>
+</body>
+</html>
