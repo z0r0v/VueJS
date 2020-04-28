@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="62b9fe0a-1b87-40b6-b15b-089df717bd84" name="sav" url="http://88.99.142.112">
+        <fileTransfer host="88.99.142.112" port="3002" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="3002" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="8ca6fbfb-7490-4ce5-9198-275b66e24419" name="tests" url="http://staging.belvg.net">
+        <fileTransfer host="staging.belvg.net" port="22" rootFolder="/home/aliaksei_zhorau/public_html/z0r0v/magento2-test/magento2" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="c2147ea4-550d-4e35-b80f-61f840b6aa06" name="lsah" url="http://ssh.dev.belvg.net">
+        <fileTransfer host="ssh.dev.belvg.net" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

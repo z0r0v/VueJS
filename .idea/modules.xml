@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/WebstormProjects/DZ/.idea/DZ.iml" filepath="$USER_HOME$/WebstormProjects/DZ/.idea/DZ.iml" />
+      <module fileurl="file://$USER_HOME$/WebstormProjects/Hometasks/.idea/Hometasks.iml" filepath="$USER_HOME$/WebstormProjects/Hometasks/.idea/Hometasks.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/VueJS.iml" filepath="$PROJECT_DIR$/.idea/VueJS.iml" />
     </modules>
   </component>

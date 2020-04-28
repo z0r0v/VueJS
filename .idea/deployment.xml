@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="sav">
     <serverData>
-      <paths name="jeans">
+      <paths name="lsah">
         <serverdata>
           <mappings>
+            <mapping local="$PROJECT_DIR$/../sav" web="/" />
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sav">
+        <serverdata>
+          <mappings>
+            <mapping deploy="" local="$PROJECT_DIR$/../lash" web="" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="tests">
+        <serverdata>
+          <mappings>
+            <mapping deploy="" local="$PROJECT_DIR$/../sav" web="/" />
+            <mapping deploy="/aliaksei_zhorau/public_html/z0r0v/magento2-test/magento2" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

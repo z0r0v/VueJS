@@ -45,17 +45,17 @@
     new Vue({
         el:'#app',
         components: {
-            //регистрируем компонет локально в инстансе #app
-            //my-counter - ключ компонента
-            //component - обьект компонента
             'my-counter':component
         }
     });
 
+
     new Vue({
         el:'#app2',
-        //компонет выдаст ошибку так как обьект component изолирован в el:'#app'
-        // <my-counter> - undefind
+        components: {
+            myCounter:component
+        }
+
     });
 
 </script>
